@@ -63,3 +63,6 @@
 .listItem .action:hover {
   background-color: transparent;
 }
+.outlined {
+  border: 1px solid var(--grey-200);
+}

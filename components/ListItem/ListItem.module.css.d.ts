@@ -6,6 +6,7 @@ declare const styles: {
   readonly "description": string;
   readonly "label": string;
   readonly "listItem": string;
+  readonly "outlined": string;
 };
 export = styles;
 

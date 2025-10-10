@@ -7,6 +7,7 @@ type ListItemProps = {
   description?: string;
   action?: ComponentChildren;
   onClick?: () => void;
+  outlined?: boolean;
 };
 export const ListItem = ({
   avatar,
@@ -14,6 +15,7 @@ export const ListItem = ({
   description,
   action,
   onClick,
+  outlined=false
 }: ListItemProps) => {
   const handleActionClick = (e: MouseEvent) => {
     e.stopPropagation();
@@ -21,7 +23,7 @@ export const ListItem = ({
 
   return (
     <li
-      className={clsx(styles.listItem, onClick && styles.clickable)}
+      className={clsx(styles.listItem, onClick && styles.clickable, outlined && styles.outlined)}
       onClick={onClick}
     >
       {avatar && <div className={styles.avatar}>{avatar}</div>}
