@@ -2,7 +2,7 @@ import { h } from 'preact';
 import styles from './Switch.module.css';
 import clsx from 'clsx';
 
-type SwitchProps = {
+export type SwitchProps = {
   checked: boolean;
   onChange: (checked: boolean) => void;
 };

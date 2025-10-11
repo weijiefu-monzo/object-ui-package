@@ -2,7 +2,7 @@ import { h, ComponentChildren } from 'preact';
 import styles from './Button.module.css';
 import clsx from 'clsx';
 
-type ButtonProps = {
+export type ButtonProps = {
   size?: 'small' | 'medium' | 'large';
   color?: 'primary' | 'secondary';
   children: string;

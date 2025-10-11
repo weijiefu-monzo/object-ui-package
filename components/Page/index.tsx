@@ -1,7 +1,7 @@
 import { h, ComponentChildren } from 'preact';
 import styles from './Page.module.css';
 
-type PageProps = {
+export type PageProps = {
   children?: ComponentChildren;
 };
 export const Page = ({ children }: PageProps) => {

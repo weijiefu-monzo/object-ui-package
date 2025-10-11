@@ -2,7 +2,7 @@ import { h, ComponentChildren } from 'preact';
 import styles, { fullWidth } from './IconButton.module.css';
 import clsx from 'clsx';
 import { useEffect } from 'preact/hooks';
-type IconButtonProps = {
+export type IconButtonProps = {
   size?: 'small' | 'medium' | 'large';
   color?: 'primary' | 'secondary';
   children: ComponentChildren;

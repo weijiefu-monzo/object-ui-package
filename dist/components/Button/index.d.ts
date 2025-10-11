@@ -1,5 +1,5 @@
 import { h, ComponentChildren } from 'preact';
-type ButtonProps = {
+export type ButtonProps = {
     size?: 'small' | 'medium' | 'large';
     color?: 'primary' | 'secondary';
     children: string;
@@ -11,4 +11,3 @@ type ButtonProps = {
     fullWidth?: boolean;
 };
 export declare const Button: ({ size, color, startIcon, endIcon, signal, fullWidth, onClick, children, disabled, }: ButtonProps) => h.JSX.Element;
-export {};

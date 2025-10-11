@@ -1,32 +1,35 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
+
+    "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "es2015",
-    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": false,
+
+    // If you’re building a component library, keep these:
     "declaration": true,
     "outDir": "./dist",
-    "jsx": "react",
-    "jsxFactory": "h",
-    "jsxFragmentFactory": "Fragment"
+    // If you do NOT want JS input files compiled, set allowJs to false:
+    "allowJs": false,
+
+    // Helpful in Vite/Storybook envs
+    "types": ["vite/client"],
+
+    // If you use React-compat libs but don't want @types/react:
+    "paths": {
+      "react": ["./node_modules/preact/compat/src/index.d.ts"],
+      "react-dom": ["./node_modules/preact/compat/src/index.d.ts"]
+    }
   },
-  "include": [
-    "components/**/*",
-    "styles/**/*",
-    "index.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.test.*"
-  ]
+  "include": ["components/**/*", "styles/**/*", "index.ts"],
+  "exclude": ["node_modules", "dist", "**/*.test.*"]
 }

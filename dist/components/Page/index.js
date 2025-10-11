@@ -1,5 +1,5 @@
-import { h } from 'preact';
+import { jsx as _jsx } from "preact/jsx-runtime";
 import styles from './Page.module.css';
 export const Page = ({ children }) => {
-    return h("div", { className: styles.page }, children);
+    return _jsx("div", { className: styles.page, children: children });
 };

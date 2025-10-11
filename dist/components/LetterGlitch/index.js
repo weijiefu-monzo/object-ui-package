@@ -1,5 +1,5 @@
-import { useRef, useEffect } from 'react';
-import { h } from 'preact';
+import { jsx as _jsx, jsxs as _jsxs } from "preact/jsx-runtime";
+import { useRef, useEffect } from 'preact/hooks';
 export const LetterGlitch = ({ glitchColors = ['#2b4539', '#61dca3', '#61b3dc'], glitchSpeed = 50, centerVignette = false, outerVignette = true, smooth = true, characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$&*()-_+=/[]{};:<>.,0123456789' }) => {
     const canvasRef = useRef(null);
     const animationRef = useRef(null);
@@ -160,7 +160,7 @@ export const LetterGlitch = ({ glitchColors = ['#2b4539', '#61dca3', '#61b3dc'],
             cancelAnimationFrame(animationRef.current);
             window.removeEventListener('resize', handleResize);
         };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line preact-hooks/exhaustive-deps
     }, [glitchSpeed, smooth]);
     const containerStyle = {
         position: 'relative',
@@ -192,8 +192,5 @@ export const LetterGlitch = ({ glitchColors = ['#2b4539', '#61dca3', '#61b3dc'],
         pointerEvents: 'none',
         background: 'radial-gradient(circle, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 60%)'
     };
-    return (h("div", { style: containerStyle },
-        h("canvas", { ref: canvasRef, style: canvasStyle }),
-        outerVignette && h("div", { style: outerVignetteStyle }),
-        centerVignette && h("div", { style: centerVignetteStyle })));
+    return (_jsxs("div", { style: containerStyle, children: [_jsx("canvas", { ref: canvasRef, style: canvasStyle }), outerVignette && _jsx("div", { style: outerVignetteStyle }), centerVignette && _jsx("div", { style: centerVignetteStyle })] }));
 };

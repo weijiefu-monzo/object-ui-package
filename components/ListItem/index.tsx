@@ -1,7 +1,7 @@
 import { h, ComponentChildren } from 'preact';
 import styles from './ListItem.module.css';
 import clsx from 'clsx';
-type ListItemProps = {
+export type ListItemProps = {
   avatar?: ComponentChildren;
   label?: string;
   description?: string;

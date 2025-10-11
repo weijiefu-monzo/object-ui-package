@@ -1,6 +1,6 @@
 # Object UI Components
 
-A React/Preact UI component library extracted from the Object Linter Figma plugin.
+A Preact UI component library extracted from the Object Linter Figma plugin. This library is built with Preact but can be used in both Preact and React applications.
 
 ## Installation
 
@@ -9,6 +9,8 @@ npm install file:../object-ui-package
 ```
 
 ## Usage
+
+### In Preact Apps
 
 ```tsx
 import { Button, Modal, Page } from '@object-ui/components';
@@ -25,6 +27,43 @@ function App() {
     </Page>
   );
 }
+```
+
+### In React Apps
+
+To use this Preact library in a React application, you need to alias `react` and `react-dom` to `preact/compat` in your bundler configuration:
+
+**Vite (`vite.config.js`):**
+```js
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      'react': 'preact/compat',
+      'react-dom': 'preact/compat',
+    },
+  },
+});
+```
+
+**Webpack (`webpack.config.js`):**
+```js
+module.exports = {
+  resolve: {
+    alias: {
+      'react': 'preact/compat',
+      'react-dom': 'preact/compat',
+    },
+  },
+};
+```
+
+Then install `preact` in your React app:
+```bash
+npm install preact
 ```
 
 ## Available Components

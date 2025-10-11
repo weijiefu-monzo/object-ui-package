@@ -1,5 +1,5 @@
 import { h, ComponentChildren } from 'preact';
-type ListItemProps = {
+export type ListItemProps = {
     avatar?: ComponentChildren;
     label?: string;
     description?: string;
@@ -8,4 +8,3 @@ type ListItemProps = {
     outlined?: boolean;
 };
 export declare const ListItem: ({ avatar, label, description, action, onClick, outlined }: ListItemProps) => h.JSX.Element;
-export {};

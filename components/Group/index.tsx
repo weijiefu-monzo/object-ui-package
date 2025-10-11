@@ -1,7 +1,7 @@
 import { h, ComponentChildren } from 'preact';
 import styles from './Group.module.css';
 import clsx from 'clsx';
-type GroupProps = {
+export type GroupProps = {
   wrap?: boolean;
   children: ComponentChildren;
   fullWidth?: boolean;
