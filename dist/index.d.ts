@@ -1,7 +1,6 @@
 export { Button } from './components/Button';
 export { Group } from './components/Group';
 export { IconButton } from './components/IconButton';
-export { LetterGlitch } from './components/LetterGlitch';
 export { ListItem } from './components/ListItem';
 export { Modal } from './components/Modal';
 export { Page } from './components/Page';

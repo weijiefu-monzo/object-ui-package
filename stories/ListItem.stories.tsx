@@ -34,7 +34,7 @@ export const WithAvatar: Story = {
     description: 'Software Engineer',
   },
   render: (args) => (
-    <ListItem {...args} avatar={<AiOutlineUser size={24} />} />
+    <ListItem {...args} avatar={<AiOutlineUser size={20} />} />
   ),
 };
 
@@ -63,7 +63,7 @@ export const ComplexItem: Story = {
   render: (args) => (
     <ListItem 
       {...args} 
-      avatar={<AiOutlineUser size={24} />}
+      avatar={<AiOutlineUser size={20} />}
       action={
         <IconButton size="small" onClick={fn}>
           <AiOutlineMore />
@@ -80,7 +80,7 @@ export const Clickable: Story = {
     onClick: fn,
   },
   render: (args) => (
-    <ListItem {...args} avatar={<AiOutlineUser size={24} />} />
+    <ListItem {...args} avatar={<AiOutlineUser size={20} />} />
   ),
 };
 
@@ -93,36 +93,10 @@ export const Outlined: Story = {
   render: (args) => (
     <ListItem 
       {...args} 
-      avatar={<AiOutlineUser size={24} />}
+      avatar={<AiOutlineUser size={20} />}
       action={
         <IconButton size="small" onClick={fn}>
           <AiOutlineDelete />
-        </IconButton>
-      } 
-    />
-  ),
-};
-
-export const LabelOnly: Story = {
-  args: {
-    label: 'Simple Label',
-  },
-};
-
-export const DescriptionOnly: Story = {
-  args: {
-    description: 'Just a description without a label',
-  },
-};
-
-export const ActionOnly: Story = {
-  args: {},
-  render: (args) => (
-    <ListItem 
-      {...args} 
-      action={
-        <IconButton size="small" onClick={fn}>
-          <AiOutlineMore />
         </IconButton>
       } 
     />

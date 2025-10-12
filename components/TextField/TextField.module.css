@@ -1,0 +1,33 @@
+.textField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-text-secondary);
+  font-weight: medium;
+  padding: 0 8px;
+}
+.input {
+  background-color: var(--grey-50);
+  border-radius: 8px;
+  box-shadow: var(--elevation--100);
+  font-size: 14px;
+  line-height: 16px;
+  padding: 4px 8px;
+  width: 100%;
+  color: var(--color-text-primary);
+}
+
+.input:focus,
+.input:active,
+input:focus-visible {
+  outline: 2px solid var(--color-action-primary-bg);
+}
+
+.input::placeholder {
+  color: var(--color-neutral-main);
+}

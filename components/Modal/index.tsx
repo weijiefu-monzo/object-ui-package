@@ -5,7 +5,7 @@ import { IconButton } from '../IconButton';
 import { AiOutlineClose } from 'react-icons/ai';
 import { Group } from '../Group';
 
-type ModalProps = {
+export type ModalProps = {
   children: ComponentChildren;
   isOpen: boolean;
   onClose: () => void;

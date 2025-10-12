@@ -1,5 +1,5 @@
 import { h, ComponentChildren } from 'preact';
-type IconButtonProps = {
+export type IconButtonProps = {
     size?: 'small' | 'medium' | 'large';
     color?: 'primary' | 'secondary';
     children: ComponentChildren;
@@ -8,4 +8,3 @@ type IconButtonProps = {
     fullWidth?: boolean;
 };
 export declare const IconButton: ({ size, color, signal, children, fullWidth, onClick, }: IconButtonProps) => h.JSX.Element;
-export {};
