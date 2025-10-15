@@ -28,8 +28,8 @@
 }
 
 .input:checked + .box {
-  background: var(--color-action-primary-bg);
-  outline-color: var(--color-action-primary-bg);
+  background: var(--color-success-main);
+  outline-color: var(--color-success-main);
 }
 
 .input:checked + .box::after {
