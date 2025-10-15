@@ -1,5 +1,8 @@
-import { jsx as _jsx } from "preact/jsx-runtime";
-import styles from './TextField.module.css';
-export const TextField = ({ placeholder, value, onChange }) => {
-    return _jsx("div", { className: styles.textField, children: _jsx("input", { className: styles.input, placeholder: placeholder, value: value, onChange: onChange }) });
+import { jsx as _jsx, jsxs as _jsxs } from "preact/jsx-runtime";
+import { useId } from "preact/hooks";
+import styles from "./TextField.module.css";
+export const TextField = ({ id, label, placeholder, value, onChange, }) => {
+    const generatedId = useId();
+    const inputId = id ?? generatedId;
+    return (_jsxs("div", { className: styles.textField, children: [label && (_jsx("label", { className: styles.label, htmlFor: inputId, children: label })), _jsx("input", { id: inputId, className: styles.input, placeholder: placeholder, value: value, onChange: onChange })] }));
 };
