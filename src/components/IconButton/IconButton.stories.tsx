@@ -1,31 +1,31 @@
-import * as React from 'react'; 
-import type { Meta, StoryObj } from '@storybook/preact-vite';
+import * as React from "react";
+import type { Meta, StoryObj } from "@storybook/preact-vite";
 // Mock function for actions
-const fn = () => console.log('action fired');
-import { IconButton, IconButtonProps } from './index';
-import { AiOutlineHeart, AiOutlinePlus, AiOutlineClose } from 'react-icons/ai';
+const fn = () => console.log("action fired");
+import { IconButton, IconButtonProps } from "./index";
+import { AiOutlineHeart, AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 
 const meta = {
-  title: 'Components/IconButton',
+  title: "Components/IconButton",
   component: IconButton,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     size: {
-      control: { type: 'select' },
-      options: ['small', 'medium', 'large'],
+      control: { type: "select" },
+      options: ["small", "medium", "large"],
     },
     color: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary'],
+      control: { type: "select" },
+      options: ["primary", "secondary"],
     },
     signal: {
-      control: { type: 'select' },
-      options: ['disabled', 'success', 'warning', 'error'],
+      control: { type: "select" },
+      options: ["disabled", "success", "warning", "error"],
     },
-    fullWidth: { control: 'boolean' },
+    fullWidth: { control: "boolean" },
   },
   args: { onClick: fn },
 } satisfies Meta<IconButtonProps>;
@@ -40,105 +40,115 @@ export const Default: Story = {
       <AiOutlineHeart />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Primary: Story = {
   args: {
-    color: 'primary',
+    color: "primary",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlinePlus />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Secondary: Story = {
   args: {
-    color: 'secondary',
+    color: "secondary",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineClose />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Small: Story = {
   args: {
-    size: 'small',
+    size: "small",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineClose />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Medium: Story = {
   args: {
-    size: 'medium',
+    size: "medium",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineClose />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Large: Story = {
   args: {
-    size: 'large',
+    size: "large",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineClose />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Success: Story = {
   args: {
-    signal: 'success',
+    signal: "success",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlinePlus />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Warning: Story = {
   args: {
-    signal: 'warning',
+    signal: "warning",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineClose />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Error: Story = {
   args: {
-    signal: 'error',
+    signal: "error",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineClose />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const Disabled: Story = {
   args: {
-    signal: 'disabled',
+    signal: "disabled",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineHeart />
     </IconButton>
   ),
+  tags: ["!dev"],
 };
 
 export const FullWidth: Story = {
@@ -146,11 +156,12 @@ export const FullWidth: Story = {
     fullWidth: true,
   },
   parameters: {
-    layout: 'padded',
+    layout: "padded",
   },
   render: (args) => (
     <IconButton {...args}>
       <AiOutlineHeart />
     </IconButton>
   ),
+  tags: ["!dev"],
 };

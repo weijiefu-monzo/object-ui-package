@@ -1,20 +1,20 @@
-import * as React from 'react'; 
-import type { Meta, StoryObj } from '@storybook/preact-vite';
-import { Group, GroupProps } from './index';
-import { Button } from '../Button';
+import * as React from "react";
+import type { Meta, StoryObj } from "@storybook/preact-vite";
+import { Group, GroupProps } from "./index";
+import { Button } from "../Button";
 // Mock function for actions
-const fn = () => console.log('action fired');
+const fn = () => console.log("action fired");
 
 const meta = {
-  title: 'Components/Group',
+  title: "Components/Group",
   component: Group,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    wrap: { control: 'boolean' },
-    fullWidth: { control: 'boolean' },
+    wrap: { control: "boolean" },
+    fullWidth: { control: "boolean" },
   },
 } satisfies Meta<GroupProps>;
 
@@ -30,6 +30,7 @@ export const Default: Story = {
       <Button onClick={fn}>Button 3</Button>
     </Group>
   ),
+  tags: ["!dev"],
 };
 
 export const Wrap: Story = {
@@ -37,7 +38,7 @@ export const Wrap: Story = {
     wrap: true,
   },
   parameters: {
-    layout: 'padded',
+    layout: "padded",
   },
   render: (args) => (
     <Group {...args}>
@@ -59,6 +60,7 @@ export const Wrap: Story = {
       <Button onClick={fn}>Button 16</Button>
     </Group>
   ),
+  tags: ["!dev"],
 };
 
 export const FullWidth: Story = {
@@ -66,7 +68,7 @@ export const FullWidth: Story = {
     fullWidth: true,
   },
   parameters: {
-    layout: 'padded',
+    layout: "padded",
   },
   render: (args) => (
     <Group {...args}>
@@ -75,4 +77,5 @@ export const FullWidth: Story = {
       <Button onClick={fn}>Button 3</Button>
     </Group>
   ),
+  tags: ["!dev"],
 };

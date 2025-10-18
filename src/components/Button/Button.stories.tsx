@@ -39,6 +39,7 @@ export const Default: Story = {
   args: {
     children: "Button",
   },
+  tags: ["!dev"],
 };
 
 export const Primary: Story = {
@@ -46,6 +47,7 @@ export const Primary: Story = {
     color: "primary",
     children: "Primary Button",
   },
+  tags: ["!dev"],
 };
 
 export const Secondary: Story = {
@@ -53,6 +55,7 @@ export const Secondary: Story = {
     color: "secondary",
     children: "Secondary Button",
   },
+  tags: ["!dev"],
 };
 
 export const Small: Story = {
@@ -60,6 +63,7 @@ export const Small: Story = {
     size: "small",
     children: "Small Button",
   },
+  tags: ["!dev"],
 };
 
 export const Medium: Story = {
@@ -67,6 +71,7 @@ export const Medium: Story = {
     size: "medium",
     children: "Medium Button",
   },
+  tags: ["!dev"],
 };
 
 export const Large: Story = {
@@ -74,6 +79,7 @@ export const Large: Story = {
     size: "large",
     children: "Large Button",
   },
+  tags: ["!dev"],
 };
 
 export const WithStartIcon: Story = {
@@ -81,6 +87,7 @@ export const WithStartIcon: Story = {
     children: "With Icon",
     startIcon: (<AiOutlinePlus />) as ComponentChildren,
   },
+  tags: ["!dev"],
 };
 
 export const WithEndIcon: Story = {
@@ -88,6 +95,7 @@ export const WithEndIcon: Story = {
     children: "With Icon",
     endIcon: (<AiOutlineHeart />) as ComponentChildren,
   },
+  tags: ["!dev"],
 };
 
 export const FullWidth: Story = {
@@ -98,6 +106,7 @@ export const FullWidth: Story = {
   parameters: {
     layout: "padded",
   },
+  tags: ["!dev"],
 };
 
 export const Success: Story = {
@@ -105,6 +114,7 @@ export const Success: Story = {
     children: "Success",
     signal: "success",
   },
+  tags: ["!dev"],
 };
 
 export const Warning: Story = {
@@ -112,6 +122,7 @@ export const Warning: Story = {
     children: "Warning",
     signal: "warning",
   },
+  tags: ["!dev"],
 };
 
 export const Error: Story = {
@@ -119,6 +130,7 @@ export const Error: Story = {
     children: "Error",
     signal: "error",
   },
+  tags: ["!dev"],
 };
 
 export const Disabled: Story = {
@@ -126,4 +138,5 @@ export const Disabled: Story = {
     children: "Disabled",
     disabled: true,
   },
+  tags: ["!dev"],
 };

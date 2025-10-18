@@ -31,4 +31,5 @@ export const Default: Story = {
       </div>
     );
   },
+  tags: ["!dev"],
 };

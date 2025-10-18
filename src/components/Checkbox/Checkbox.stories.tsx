@@ -27,4 +27,5 @@ export const Default: Story = {
       />
     );
   },
+  tags: ["!dev"],
 };

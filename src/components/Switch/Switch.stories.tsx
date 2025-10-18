@@ -1,19 +1,19 @@
-import * as React from 'react'; 
-import type { Meta, StoryObj } from '@storybook/preact-vite';
-import { useState } from 'preact/hooks';
+import * as React from "react";
+import type { Meta, StoryObj } from "@storybook/preact-vite";
+import { useState } from "preact/hooks";
 // Mock function for actions
-const fn = () => console.log('action fired');
-import { Switch, SwitchProps } from './index';
+const fn = () => console.log("action fired");
+import { Switch, SwitchProps } from "./index";
 
 const meta = {
-  title: 'Components/Switch',
+  title: "Components/Switch",
   component: Switch,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
-    checked: { control: 'boolean' },
+    checked: { control: "boolean" },
   },
   args: {
     onChange: fn,
@@ -27,12 +27,14 @@ export const Default: Story = {
   args: {
     checked: false,
   },
+  tags: ["!dev"],
 };
 
 export const Checked: Story = {
   args: {
     checked: true,
   },
+  tags: ["!dev"],
 };
 
 export const Interactive: Story = {
@@ -41,7 +43,7 @@ export const Interactive: Story = {
   },
   render: (args) => {
     const [checked, setChecked] = useState(args.checked || false);
-    
+
     return (
       <Switch
         checked={checked}
@@ -52,4 +54,5 @@ export const Interactive: Story = {
       />
     );
   },
+  tags: ["!dev"],
 };
