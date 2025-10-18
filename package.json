@@ -14,14 +14,12 @@
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6008",
-    "build-storybook": "storybook build",
-    "extract-llms": "npx @fluentui/storybook-llms-extractor --config llms.config.js"
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "preact": ">=10"
   },
   "dependencies": {
-    "@fluentui/storybook-llms-extractor": "^0.0.2",
     "clsx": "^2.1.1",
     "react-icons": "^5.5.0"
   },
