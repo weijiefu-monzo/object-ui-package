@@ -30,6 +30,6 @@
       "react-dom": ["./node_modules/preact/compat/src/index.d.ts"]
     }
   },
-  "include": ["components/**/*", "styles/**/*", "index.ts"],
+  "include": ["src/**/*", "index.ts"],
   "exclude": ["node_modules", "dist", "**/*.test.*"]
 }

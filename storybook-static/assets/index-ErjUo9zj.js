@@ -1,0 +1,1 @@
+import{u as p}from"./jsxRuntime.module-CxGcVytw.js";import{c as s}from"./clsx-B-dksMZM.js";const c="_group_1x7cu_1",l="_wrap_1x7cu_10",_="_fullWidth_1x7cu_13",r={group:c,wrap:l,fullWidth:_},f=({wrap:o,children:t,fullWidth:u})=>p("div",{className:s(r.group,o&&r.wrap,u&&r.fullWidth),children:t});export{f as G};

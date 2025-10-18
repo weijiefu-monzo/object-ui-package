@@ -1,14 +1,14 @@
 // Export all components
-export { Button } from "./components/Button";
-export { Group } from "./components/Group";
-export { IconButton } from "./components/IconButton";
-export { ListItem } from "./components/ListItem";
-export { Modal } from "./components/Modal";
-export { Select } from "./components/Select";
-export { Checkbox } from "./components/Checkbox";
-export { Page } from "./components/Page";
-export { Switch } from "./components/Switch";
+export { Button } from "./src/components/Button";
+export { Group } from "./src/components/Group";
+export { IconButton } from "./src/components/IconButton";
+export { ListItem } from "./src/components/ListItem";
+export { Modal } from "./src/components/Modal";
+export { Select } from "./src/components/Select";
+export { Checkbox } from "./src/components/Checkbox";
+export { Page } from "./src/components/Page";
+export { Switch } from "./src/components/Switch";
 // Import styles (they will be bundled with components)
-import "./styles/index.css";
-import "./styles/primitive.css";
-import "./styles/semantic.css";
+import "./src/styles/index.css";
+import "./src/styles/primitive.css";
+import "./src/styles/semantic.css";

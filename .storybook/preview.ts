@@ -1,15 +1,15 @@
-import type { Preview } from '@storybook/preact-vite';
-import '../styles/primitive.css';
-import '../styles/semantic.css';
-import '../styles/index.css';
+import type { Preview } from "@storybook/preact-vite";
+import "../src/styles/primitive.css";
+import "../src/styles/semantic.css";
+import "../src/styles/index.css";
 
 const preview: Preview = {
   parameters: {
     backgrounds: {
-      default: 'canvas',
+      default: "canvas",
       values: [
-        { name: 'canvas', value: 'var(--color-background-canvas)' },
-        { name: 'white', value: '#ffffff' },
+        { name: "canvas", value: "var(--color-background-canvas)" },
+        { name: "white", value: "#ffffff" },
       ],
     },
     controls: {
