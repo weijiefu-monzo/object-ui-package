@@ -6,7 +6,7 @@ import { IconButton, IconButtonProps } from "./index";
 import { AiOutlineHeart, AiOutlinePlus, AiOutlineClose } from "react-icons/ai";
 
 const meta = {
-  title: "Components/IconButton",
+  title: "Components/IconButton/Code",
   component: IconButton,
   parameters: {
     layout: "centered",

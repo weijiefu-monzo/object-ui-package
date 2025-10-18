@@ -5,7 +5,7 @@ import { Page, PageProps } from "./index";
 const fn = () => console.log("action fired");
 
 const meta = {
-  title: "Components/Page",
+  title: "Components/Page/Code",
   component: Page,
   parameters: {
     layout: "fullscreen",

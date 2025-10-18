@@ -6,7 +6,7 @@ const fn = () => console.log("action fired");
 import { Switch, SwitchProps } from "./index";
 
 const meta = {
-  title: "Components/Switch",
+  title: "Components/Switch/Code",
   component: Switch,
   parameters: {
     layout: "centered",

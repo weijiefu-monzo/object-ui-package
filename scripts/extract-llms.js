@@ -23,6 +23,10 @@ function extractComponentInfo(componentPath) {
   const componentName = path.basename(componentPath);
   const indexPath = path.join(componentPath, "index.tsx");
   const storiesPath = path.join(componentPath, `${componentName}.stories.tsx`);
+  const designStoriesPath = path.join(
+    componentPath,
+    `${componentName}.design.stories.tsx`
+  );
 
   let componentInfo = {
     name: componentName,
@@ -30,6 +34,7 @@ function extractComponentInfo(componentPath) {
     props: {},
     stories: [],
     examples: [],
+    designGuidelines: "",
   };
 
   // Extract component props and description from index.tsx
@@ -95,6 +100,20 @@ function extractComponentInfo(componentPath) {
     }
   }
 
+  // Extract design guidelines from design stories
+  if (fs.existsSync(designStoriesPath)) {
+    const designStoriesContent = fs.readFileSync(designStoriesPath, "utf8");
+
+    // Extract design guidelines from the docs.description.component field
+    const designGuidelinesMatch = designStoriesContent.match(
+      /docs:\s*\{\s*description:\s*\{\s*component:\s*`([^`]+)`/s
+    );
+
+    if (designGuidelinesMatch) {
+      componentInfo.designGuidelines = designGuidelinesMatch[1].trim();
+    }
+  }
+
   return componentInfo;
 }
 
@@ -104,6 +123,13 @@ function generateLLMDocumentation(componentInfo) {
 
   if (componentInfo.description) {
     doc += `${componentInfo.description}\n\n`;
+  }
+
+  // Design Guidelines section
+  if (componentInfo.designGuidelines) {
+    doc += `## Design Guidelines\n\n`;
+    doc += componentInfo.designGuidelines;
+    doc += `\n\n`;
   }
 
   // Props section
@@ -154,6 +180,9 @@ function generateSummary(components) {
     summary += `- [${component.name}](./${component.name}.md)`;
     if (component.description) {
       summary += ` - ${component.description}`;
+    }
+    if (component.designGuidelines) {
+      summary += ` (includes design guidelines)`;
     }
     summary += `\n`;
   });
@@ -222,6 +251,7 @@ function main() {
       description: c.description,
       props: Object.keys(c.props),
       stories: c.stories.map((s) => s.name),
+      hasDesignGuidelines: !!c.designGuidelines,
     })),
     generatedAt: new Date().toISOString(),
   };

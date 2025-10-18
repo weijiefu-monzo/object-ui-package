@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/preact-vite";
 import { Select, SelectProps } from "./index";
 
 const meta = {
-  title: "Components/Select",
+  title: "Components/Select/Code",
   component: Select,
   argTypes: {
     label: { control: "text" },

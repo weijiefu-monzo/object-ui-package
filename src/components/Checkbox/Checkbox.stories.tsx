@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/preact-vite";
 import { Checkbox, CheckboxProps } from "./index";
 
 const meta = {
-  title: "Components/Checkbox",
+  title: "Components/Checkbox/Code",
   component: Checkbox,
   argTypes: {
     label: { control: "text" },

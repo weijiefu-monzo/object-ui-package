@@ -1,7 +1,15 @@
-# Checkbox Component
+import * as React from "react";
+import type { Meta, StoryObj } from "@storybook/preact-vite";
+import { Checkbox, CheckboxProps } from "./index";
 
-## Design Guidelines
-
+const meta = {
+  title: "Components/Checkbox/Design",
+  component: Checkbox,
+  parameters: {
+    layout: "centered",
+    docs: {
+      description: {
+        component: `
 ## Overview
 The Checkbox component allows users to select one or more options from a set of choices.
 
@@ -51,23 +59,42 @@ The Checkbox component allows users to select one or more options from a set of 
 3. **Spacing**: Provide adequate spacing between options
 4. **Alignment**: Align checkboxes consistently
 5. **Feedback**: Provide clear visual feedback for all states
+        `,
+      },
+    },
+  },
+  tags: ["autodocs"],
+} satisfies Meta<CheckboxProps>;
 
-## Props
+export default meta;
+type Story = StoryObj<CheckboxProps>;
 
-| Property | Type | Required | Description |
-|----------|------|----------|-------------|
-| id | string | Yes | - |
-| label | string | No | - |
-| checked | boolean | No | - |
-| onChange | (checked: boolean) => void | No | - |
+export const DesignOverview: Story = {
+  args: { id: "design-overview", label: "Design Overview" },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          "This story demonstrates the basic checkbox design principles and usage guidelines.",
+      },
+    },
+  },
+  tags: ["!dev"],
+};
 
-## Examples
-
-### Default
-
-```tsx
-<Checkbox
-  label="I agree"
-/>
-```
-
+export const States: Story = {
+  render: () => (
+    <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+      <Checkbox id="unchecked" label="Unchecked" />
+      <Checkbox id="checked" label="Checked" checked />
+    </div>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story: "Different checkbox states and their visual representation.",
+      },
+    },
+  },
+  tags: ["!dev"],
+};

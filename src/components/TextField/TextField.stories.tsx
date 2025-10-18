@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/preact-vite";
 import { TextField, TextFieldProps } from "./index";
 
 const meta = {
-  title: "Components/TextField",
+  title: "Components/TextField/Code",
   component: TextField,
   argTypes: {
     label: { control: "text" },

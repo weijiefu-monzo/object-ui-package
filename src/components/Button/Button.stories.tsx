@@ -7,7 +7,7 @@ import { ComponentChildren } from "preact";
 import { AiOutlinePlus, AiOutlineHeart } from "react-icons/ai";
 
 const meta = {
-  title: "Components/Button",
+  title: "Components/Button/Code",
   component: Button,
   parameters: {
     layout: "centered",

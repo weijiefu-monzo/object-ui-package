@@ -12,7 +12,7 @@ import {
 } from "react-icons/ai";
 
 const meta = {
-  title: "Components/ListItem",
+  title: "Components/ListItem/Code",
   component: ListItem,
   parameters: {
     layout: "centered",

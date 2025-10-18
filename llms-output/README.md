@@ -4,16 +4,16 @@ Object UI Components documentation
 
 ## Components
 
-- [Button](./Button.md)
-- [Checkbox](./Checkbox.md)
-- [Group](./Group.md)
-- [IconButton](./IconButton.md)
-- [ListItem](./ListItem.md)
-- [Modal](./Modal.md)
-- [Page](./Page.md)
-- [Select](./Select.md)
-- [Switch](./Switch.md)
-- [TextField](./TextField.md)
+- [Button](./Button.md) (includes design guidelines)
+- [Checkbox](./Checkbox.md) (includes design guidelines)
+- [Group](./Group.md) (includes design guidelines)
+- [IconButton](./IconButton.md) (includes design guidelines)
+- [ListItem](./ListItem.md) (includes design guidelines)
+- [Modal](./Modal.md) (includes design guidelines)
+- [Page](./Page.md) (includes design guidelines)
+- [Select](./Select.md) (includes design guidelines)
+- [Switch](./Switch.md) (includes design guidelines)
+- [TextField](./TextField.md) (includes design guidelines)
 
 ## Usage
 

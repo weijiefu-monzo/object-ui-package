@@ -6,7 +6,7 @@ import { Button } from "../Button";
 const fn = () => console.log("action fired");
 
 const meta = {
-  title: "Components/Group",
+  title: "Components/Group/Code",
   component: Group,
   parameters: {
     layout: "centered",

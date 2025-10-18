@@ -7,7 +7,7 @@ import { Button } from "../Button";
 import { Group } from "../Group";
 
 const meta = {
-  title: "Components/Modal",
+  title: "Components/Modal/Code",
   component: Modal,
   parameters: {
     layout: "fullscreen",
