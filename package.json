@@ -14,7 +14,8 @@
     "dev": "tsc --watch",
     "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6008",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "extract-llms": "node scripts/extract-llms.js"
   },
   "peerDependencies": {
     "preact": ">=10"

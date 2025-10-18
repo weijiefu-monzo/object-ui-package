@@ -1,0 +1,171 @@
+{
+  "title": "Object UI Components",
+  "description": "Object UI Components documentation",
+  "components": [
+    {
+      "name": "Button",
+      "description": "",
+      "props": [
+        "size",
+        "color",
+        "children",
+        "onClick",
+        "startIcon",
+        "endIcon",
+        "signal",
+        "disabled",
+        "fullWidth"
+      ],
+      "stories": [
+        "Default",
+        "Primary",
+        "Secondary",
+        "Small",
+        "Medium",
+        "Large",
+        "WithStartIcon",
+        "WithEndIcon",
+        "FullWidth",
+        "Success",
+        "Warning",
+        "Error",
+        "Disabled"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "description": "",
+      "props": [
+        "id",
+        "label",
+        "checked",
+        "onChange"
+      ],
+      "stories": [
+        "Default"
+      ]
+    },
+    {
+      "name": "Group",
+      "description": "",
+      "props": [
+        "wrap",
+        "children",
+        "fullWidth"
+      ],
+      "stories": [
+        "Wrap",
+        "FullWidth"
+      ]
+    },
+    {
+      "name": "IconButton",
+      "description": "",
+      "props": [
+        "size",
+        "color",
+        "children",
+        "onClick",
+        "signal",
+        "fullWidth"
+      ],
+      "stories": [
+        "Primary",
+        "Secondary",
+        "Small",
+        "Medium",
+        "Large",
+        "Success",
+        "Warning",
+        "Error",
+        "Disabled",
+        "FullWidth"
+      ]
+    },
+    {
+      "name": "ListItem",
+      "description": "",
+      "props": [
+        "avatar",
+        "label",
+        "description",
+        "action",
+        "onClick",
+        "outlined"
+      ],
+      "stories": [
+        "Default",
+        "WithAvatar",
+        "WithAction",
+        "ComplexItem",
+        "Clickable",
+        "Outlined"
+      ]
+    },
+    {
+      "name": "Modal",
+      "description": "",
+      "props": [
+        "children",
+        "isOpen",
+        "onClose",
+        "title",
+        "actions"
+      ],
+      "stories": [
+        "Default"
+      ]
+    },
+    {
+      "name": "Page",
+      "description": "",
+      "props": [
+        "children"
+      ],
+      "stories": []
+    },
+    {
+      "name": "Select",
+      "description": "",
+      "props": [
+        "id",
+        "label",
+        "placeholder",
+        "options",
+        "value",
+        "onChange"
+      ],
+      "stories": [
+        "Default"
+      ]
+    },
+    {
+      "name": "Switch",
+      "description": "",
+      "props": [
+        "checked",
+        "onChange"
+      ],
+      "stories": [
+        "Default",
+        "Checked",
+        "Interactive"
+      ]
+    },
+    {
+      "name": "TextField",
+      "description": "",
+      "props": [
+        "id",
+        "label",
+        "placeholder",
+        "value",
+        "onChange"
+      ],
+      "stories": [
+        "Default"
+      ]
+    }
+  ],
+  "generatedAt": "2025-10-18T20:38:12.252Z"
+}
