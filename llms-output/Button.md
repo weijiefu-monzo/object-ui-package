@@ -1,4 +1,4 @@
-# Big Button Component
+# Button Component
 
 ## Design Guidelines
 
