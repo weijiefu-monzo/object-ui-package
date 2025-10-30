@@ -10,5 +10,6 @@ export type SelectProps = {
     options: SelectOption[];
     value?: string;
     onChange?: GenericEventHandler<HTMLSelectElement> | undefined;
+    disabled?: boolean;
 };
-export declare const Select: ({ id, label, placeholder, options, value, onChange, }: SelectProps) => h.JSX.Element;
+export declare const Select: ({ id, label, placeholder, options, value, onChange, disabled, }: SelectProps) => h.JSX.Element;

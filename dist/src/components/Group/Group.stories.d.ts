@@ -1,6 +1,6 @@
-import * as React from 'react';
-import type { StoryObj } from '@storybook/preact-vite';
-import { GroupProps } from './index';
+import * as React from "react";
+import type { StoryObj } from "@storybook/preact-vite";
+import { GroupProps } from "./index";
 declare const meta: {
     title: string;
     component: ({ wrap, children, fullWidth }: GroupProps) => React.JSX.Element;

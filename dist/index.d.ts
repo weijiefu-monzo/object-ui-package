@@ -1,4 +1,5 @@
 export { Button } from "./src/components/Button";
+export { Card } from "./src/components/Card";
 export { Group } from "./src/components/Group";
 export { IconButton } from "./src/components/IconButton";
 export { ListItem } from "./src/components/ListItem";

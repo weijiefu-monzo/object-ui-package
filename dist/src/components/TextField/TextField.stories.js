@@ -2,7 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "preact/jsx-runtime";
 import * as React from "react";
 import { TextField } from "./index";
 const meta = {
-    title: "Components/TextField",
+    title: "Components/TextField/Code",
     component: TextField,
     argTypes: {
         label: { control: "text" },
@@ -18,4 +18,5 @@ export const Default = {
         const [value, setValue] = React.useState("");
         return (_jsxs("div", { style: { display: "flex", flexDirection: "column", gap: 32 }, children: [_jsx(TextField, { ...args, value: value, onChange: (e) => setValue(e.target.value) }), _jsxs("div", { children: ["Current value: ", value] })] }));
     },
+    tags: ["!dev"],
 };

@@ -2,7 +2,7 @@ import { jsx as _jsx, jsxs as _jsxs } from "preact/jsx-runtime";
 import * as React from "react";
 import { Select } from "./index";
 const meta = {
-    title: "Components/Select",
+    title: "Components/Select/Code",
     component: Select,
     argTypes: {
         label: { control: "text" },
@@ -31,4 +31,5 @@ export const Default = {
                 gap: 32,
             }, children: [_jsx(Select, { ...args, value: value, onChange: (e) => setValue(e.target.value) }), _jsxs("div", { children: ["Current value: ", value || "(none)"] })] }));
     },
+    tags: ["!dev"],
 };

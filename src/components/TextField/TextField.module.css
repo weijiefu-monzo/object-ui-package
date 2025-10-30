@@ -31,3 +31,26 @@ input:focus-visible {
 .input::placeholder {
   color: var(--color-neutral-main);
 }
+
+.input.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.input.error {
+  outline: 2px solid var(--color-error-main);
+}
+
+.input.error:focus,
+.input.error:active,
+input.error:focus-visible {
+  outline: 2px solid var(--color-error-main);
+}
+
+.errorMessage {
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--color-error-main);
+  padding: 0 8px;
+  margin-top: 4px;
+}

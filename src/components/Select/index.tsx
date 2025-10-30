@@ -14,6 +14,7 @@ export type SelectProps = {
   options: SelectOption[];
   value?: string;
   onChange?: GenericEventHandler<HTMLSelectElement> | undefined;
+  disabled?: boolean;
 };
 
 export const Select = ({
@@ -23,6 +24,7 @@ export const Select = ({
   options,
   value,
   onChange,
+  disabled,
 }: SelectProps) => {
   const hasValue = value !== undefined && value !== "";
   const generatedId = useId();
@@ -36,9 +38,12 @@ export const Select = ({
       )}
       <select
         id={selectId}
-        className={`${styles.select} ${!hasValue ? styles.placeholder : ""}`}
+        className={`${styles.select} ${!hasValue ? styles.placeholder : ""} ${
+          disabled ? styles.disabled : ""
+        }`}
         value={value ?? ""}
         onChange={onChange}
+        disabled={disabled}
       >
         {placeholder && !hasValue && (
           <option value="" disabled hidden>

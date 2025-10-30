@@ -144,7 +144,10 @@ export const InputTypes: Story = {
     const handleChange =
       (field: keyof typeof values) =>
       (e: React.ChangeEvent<HTMLInputElement>) => {
-        setValues((prev) => ({ ...prev, [field]: e.target.value }));
+        setValues((prev) => ({
+          ...prev,
+          [field]: (e.target as HTMLInputElement).value,
+        }));
       };
 
     return (

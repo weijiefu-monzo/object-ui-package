@@ -1,6 +1,6 @@
-import * as React from 'react';
-import type { StoryObj } from '@storybook/preact-vite';
-import { ListItemProps } from './index';
+import * as React from "react";
+import type { StoryObj } from "@storybook/preact-vite";
+import { ListItemProps } from "./index";
 declare const meta: {
     title: string;
     component: ({ avatar, label, description, action, onClick, outlined }: ListItemProps) => React.JSX.Element;

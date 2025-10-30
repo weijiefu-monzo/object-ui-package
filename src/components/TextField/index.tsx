@@ -8,6 +8,9 @@ export type TextFieldProps = {
   placeholder?: string;
   value?: string;
   onChange?: GenericEventHandler<HTMLInputElement> | undefined;
+  type?: string;
+  disabled?: boolean;
+  error?: string;
 };
 export const TextField = ({
   id,
@@ -15,6 +18,9 @@ export const TextField = ({
   placeholder,
   value,
   onChange,
+  type,
+  disabled,
+  error,
 }: TextFieldProps) => {
   const generatedId = useId();
   const inputId = id ?? generatedId;
@@ -27,11 +33,16 @@ export const TextField = ({
       )}
       <input
         id={inputId}
-        className={styles.input}
+        className={`${styles.input} ${disabled ? styles.disabled : ""} ${
+          error ? styles.error : ""
+        }`}
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        type={type}
+        disabled={disabled}
       />
+      {error && <div className={styles.errorMessage}>{error}</div>}
     </div>
   );
 };

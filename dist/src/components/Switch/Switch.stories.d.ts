@@ -1,9 +1,9 @@
-import * as React from 'react';
-import type { StoryObj } from '@storybook/preact-vite';
-import { SwitchProps } from './index';
+import * as React from "react";
+import type { StoryObj } from "@storybook/preact-vite";
+import { SwitchProps } from "./index";
 declare const meta: {
     title: string;
-    component: ({ checked, onChange }: SwitchProps) => React.JSX.Element;
+    component: ({ checked, onChange, disabled }: SwitchProps) => React.JSX.Element;
     parameters: {
         layout: string;
     };

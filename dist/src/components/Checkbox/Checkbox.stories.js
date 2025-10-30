@@ -2,7 +2,7 @@ import { jsx as _jsx } from "preact/jsx-runtime";
 import * as React from "react";
 import { Checkbox } from "./index";
 const meta = {
-    title: "Components/Checkbox",
+    title: "Components/Checkbox/Code",
     component: Checkbox,
     argTypes: {
         label: { control: "text" },
@@ -17,4 +17,5 @@ export const Default = {
         const [checked, setChecked] = React.useState(false);
         return (_jsx(Checkbox, { ...args, checked: checked, onChange: (val) => setChecked(val) }));
     },
+    tags: ["!dev"],
 };

@@ -1,6 +1,6 @@
-import * as React from 'react';
-import type { StoryObj } from '@storybook/preact-vite';
-import { ModalProps } from './index';
+import * as React from "react";
+import type { StoryObj } from "@storybook/preact-vite";
+import { ModalProps } from "./index";
 declare const meta: {
     title: string;
     component: ({ children, title, isOpen, actions, onClose, }: ModalProps) => React.JSX.Element;

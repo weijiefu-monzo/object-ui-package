@@ -3,7 +3,7 @@ import type { StoryObj } from "@storybook/preact-vite";
 import { TextFieldProps } from "./index";
 declare const meta: {
     title: string;
-    component: ({ id, label, placeholder, value, onChange, }: TextFieldProps) => React.JSX.Element;
+    component: ({ id, label, placeholder, value, onChange, type, disabled, error, }: TextFieldProps) => React.JSX.Element;
     argTypes: {
         label: {
             control: "text";

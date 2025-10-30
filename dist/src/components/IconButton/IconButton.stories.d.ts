@@ -1,6 +1,6 @@
-import * as React from 'react';
-import type { StoryObj } from '@storybook/preact-vite';
-import { IconButtonProps } from './index';
+import * as React from "react";
+import type { StoryObj } from "@storybook/preact-vite";
+import { IconButtonProps } from "./index";
 declare const meta: {
     title: string;
     component: ({ size, color, signal, children, fullWidth, onClick, }: IconButtonProps) => React.JSX.Element;

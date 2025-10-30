@@ -1,17 +1,17 @@
 import { jsx as _jsx } from "preact/jsx-runtime";
-import { useState } from 'preact/hooks';
+import { useState } from "preact/hooks";
 // Mock function for actions
-const fn = () => console.log('action fired');
-import { Switch } from './index';
+const fn = () => console.log("action fired");
+import { Switch } from "./index";
 const meta = {
-    title: 'Components/Switch',
+    title: "Components/Switch/Code",
     component: Switch,
     parameters: {
-        layout: 'centered',
+        layout: "centered",
     },
-    tags: ['autodocs'],
+    tags: ["autodocs"],
     argTypes: {
-        checked: { control: 'boolean' },
+        checked: { control: "boolean" },
     },
     args: {
         onChange: fn,
@@ -22,11 +22,13 @@ export const Default = {
     args: {
         checked: false,
     },
+    tags: ["!dev"],
 };
 export const Checked = {
     args: {
         checked: true,
     },
+    tags: ["!dev"],
 };
 export const Interactive = {
     args: {
@@ -39,4 +41,5 @@ export const Interactive = {
                 args.onChange?.(newChecked);
             } }));
     },
+    tags: ["!dev"],
 };
